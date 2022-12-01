@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
+using UnityEngine.SceneManagement;
 public class ControladorRed : MonoBehaviour
 {
     public int indexRoute;
@@ -151,6 +153,10 @@ public class ControladorRed : MonoBehaviour
         if (other.CompareTag("Blue"))
         {
             Destroy(other.gameObject);
+        }
+        if (other.CompareTag("sphere"))
+        {
+            SceneManager.LoadScene(2);
         }
     }
 

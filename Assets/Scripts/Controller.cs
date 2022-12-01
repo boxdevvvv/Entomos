@@ -1,8 +1,10 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
 {
+    
     public int indexRoute;
     public Vector3[] rutas;
     public int eleccionRuta;
@@ -138,6 +140,10 @@ public class Controller : MonoBehaviour
         if (other.CompareTag("Red"))
         {
             Destroy(other.gameObject);
+        }
+        if(other.CompareTag("sphere"))
+        {
+            SceneManager.LoadScene(1);
         }
     }
 
