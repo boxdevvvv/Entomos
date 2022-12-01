@@ -3768,7 +3768,7 @@ MonoBehaviour:
   - {x: 0, y: -220, z: 0}
   eleccionRuta: 2
   txteter: {fileID: 669267251}
-  eter: 2737
+  eter: 0
   unidades:
   - {fileID: 8065551805019304593, guid: 3138558fd4f4840419e01e4bd3331535, type: 3}
   - {fileID: 8065551805019304593, guid: 42bc49591fe19f64ba7eb36bc5531374, type: 3}
@@ -7005,7 +7005,7 @@ MonoBehaviour:
   - {x: 0, y: -45, z: 0}
   eleccionRuta: 2
   txteter: {fileID: 722558386}
-  eter: 6285
+  eter: 0
   unidades:
   - {fileID: 8065551805019304593, guid: d8fd379baf837b4488a291b28d5b500c, type: 3}
   - {fileID: 8065551805019304593, guid: 556061486eeb38c499d7aae826ce7f33, type: 3}

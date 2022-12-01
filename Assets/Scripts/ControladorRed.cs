@@ -143,7 +143,7 @@ public class ControladorRed : MonoBehaviour
         while (true)
         {
             eter++;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
         }
     }
     private void OnTriggerEnter(Collider other)
