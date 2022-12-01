@@ -15,7 +15,7 @@ public class Controller : MonoBehaviour
     public GameObject[] rutasObject;
     void Update()
     {
-        txteter.text = "eter: " + eter;
+        txteter.text =  eter.ToString();
         #region movimiento teclas visualiza rutas
         if (Input.GetKeyDown(KeyCode.S))
         {
