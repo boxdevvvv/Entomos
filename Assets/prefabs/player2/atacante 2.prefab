@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5172097516823169239}
   - component: {fileID: -318809142126356109}
   - component: {fileID: 3698973657982010193}
+  - component: {fileID: -8384573375800330356}
   m_Layer: 0
   m_Name: atacante 2
   m_TagString: Red
@@ -129,6 +130,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directions: 0
   speed: -5
+--- !u!95 &-8384573375800330356
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8065551805019304593}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a94a01392855df84d8972672a3ee1b28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7996244435863497089
 PrefabInstance:
   m_ObjectHideFlags: 0
