@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5172097516823169239}
   - component: {fileID: 4507673576274783187}
   - component: {fileID: 4356041924971127929}
-  - component: {fileID: 5693989812794739135}
   m_Layer: 0
   m_Name: traslador 2
   m_TagString: Red
@@ -132,14 +131,14 @@ MonoBehaviour:
   direction: 0
   sphere: {fileID: 0}
   win: 0
---- !u!95 &5693989812794739135
+--- !u!95 &6814508083409614023
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8065551805019304593}
+  m_GameObject: {fileID: 9093101145563597163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: dad185a40ca7d6148a77f720aeb536fb, type: 2}
@@ -228,6 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 73f73f6599d77fa47b52462ab3903ee2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb9392760172c44ea35dd1ab4bf4720, type: 3}
+--- !u!1 &9093101145563597163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ffb9392760172c44ea35dd1ab4bf4720, type: 3}
+  m_PrefabInstance: {fileID: 8282197236411610170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8465359907706917841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ffb9392760172c44ea35dd1ab4bf4720, type: 3}

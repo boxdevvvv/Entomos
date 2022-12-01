@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &3681849344023704815
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3013609621096916598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c05827d3cf6d2864c9e3d88718ef17d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8065551805019304593
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +33,6 @@ GameObject:
   - component: {fileID: 5172097516823169239}
   - component: {fileID: 311001071056185097}
   - component: {fileID: 8879098026257603323}
-  - component: {fileID: -2246404851606884754}
   m_Layer: 0
   m_Name: minero 2
   m_TagString: Red
@@ -132,25 +150,6 @@ MonoBehaviour:
   directionTop: 0
   directionBot: 0
   recolecto: 0
---- !u!95 &-2246404851606884754
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8065551805019304593}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c05827d3cf6d2864c9e3d88718ef17d7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2671501175272200999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -220,6 +219,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53972cb63aa59e46bb36a26df593e39, type: 3}
+--- !u!1 &3013609621096916598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e53972cb63aa59e46bb36a26df593e39, type: 3}
+  m_PrefabInstance: {fileID: 2671501175272200999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2493214459370028236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e53972cb63aa59e46bb36a26df593e39, type: 3}

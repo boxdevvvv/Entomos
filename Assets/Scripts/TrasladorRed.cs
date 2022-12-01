@@ -42,6 +42,7 @@ public class TrasladorRed : MonoBehaviour
             direction = true;
             win = true;
             speed = 1;
+            GetComponentInChildren<Animator>().SetBool("TomaOrbe", true);
         }
         if (win && other.CompareTag("BaseBlue"))
         {

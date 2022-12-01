@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &6975142174688065120
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7077745615204734160}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a94a01392855df84d8972672a3ee1b28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8065551805019304593
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +33,6 @@ GameObject:
   - component: {fileID: 5172097516823169239}
   - component: {fileID: -318809142126356109}
   - component: {fileID: 3698973657982010193}
-  - component: {fileID: -8384573375800330356}
   m_Layer: 0
   m_Name: atacante 2
   m_TagString: Red
@@ -130,25 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directions: 0
   speed: -5
---- !u!95 &-8384573375800330356
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8065551805019304593}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a94a01392855df84d8972672a3ee1b28, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7996244435863497089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -222,6 +221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d350e3c6fa1f046b4fdce834e35d1b, type: 3}
+--- !u!1 &7077745615204734160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 14d350e3c6fa1f046b4fdce834e35d1b, type: 3}
+  m_PrefabInstance: {fileID: 7996244435863497089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7598386827085155946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14d350e3c6fa1f046b4fdce834e35d1b, type: 3}
