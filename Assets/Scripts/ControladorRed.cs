@@ -150,7 +150,7 @@ public class ControladorRed : MonoBehaviour
     {
         if(other.CompareTag("Red"))
         {
-           if(other.GetComponent<minero>().recolecto == true)
+           if(other.GetComponent<mineroRed>().recolecto == true)
             {
                 eter++;
             }
