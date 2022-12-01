@@ -21,23 +21,28 @@ public class minero : MonoBehaviour
             // direction = true;
             directionTop = true;
             recolecto = true;
+            GetComponentInChildren<Animator>().SetBool("Cargando", true);
         }
         if (other.CompareTag("BaseBlue") && directionTop)
         {
             //direction = false;
             transform.rotation = Quaternion.Euler(0, 220, 0);
+            GetComponentInChildren<Animator>().SetBool("Cargando", false);
+
 
         }
         if (other.CompareTag("BaseBlue") && directionBot)
         {
             transform.rotation = Quaternion.Euler(0, -45, 0);
+            GetComponentInChildren<Animator>().SetBool("Cargando", false);
 
         }
         if (other.CompareTag("MinaBlueBot"))
         {
             transform.rotation = Quaternion.Euler(0, -225, 0);
+            GetComponentInChildren<Animator>().SetBool("Cargando", true);
 
-           directionBot = true;
+            directionBot = true;
             recolecto = true;
         }
     }
