@@ -127,6 +127,13 @@ public class Controller : MonoBehaviour
         Instantiate(unidades[2], transform.position, Quaternion.Euler(rutas[eleccionRuta]));
 
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if ( other.CompareTag("BaseBlue")&& other.GetComponent<traslador>().spawn == true)
+        {
+            Destroy(gameObject);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Blue"))
@@ -135,7 +142,7 @@ public class Controller : MonoBehaviour
             {
                 eter++;
                 other.GetComponent<minero>().recolecto = false;
-            }
+            }       
         }
         if (other.CompareTag("Red"))
         {
@@ -143,9 +150,13 @@ public class Controller : MonoBehaviour
         }
         if(other.CompareTag("sphere"))
         {
+            print("asda");
             SceneManager.LoadScene(1);
         }
+       
     }
+    
+    
 
     IEnumerator Eter()
     {

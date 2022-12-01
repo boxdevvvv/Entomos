@@ -115,6 +115,7 @@ MonoBehaviour:
   direction: 0
   win: 0
   sphere: {fileID: 0}
+  spawn: 0
 --- !u!54 &-2540310788199639549
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -164,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalRotation.w

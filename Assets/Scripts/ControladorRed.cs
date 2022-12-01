@@ -129,6 +129,15 @@ public class ControladorRed : MonoBehaviour
 
     }
 
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("BaseRed") && other.GetComponent<traslador>().spawn == true)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     IEnumerator Eter()
     {
         while (true)

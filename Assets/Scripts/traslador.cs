@@ -50,9 +50,9 @@ public class traslador : MonoBehaviour
             win = true;
             speed = 1;
         }
-        if(spawn && other.CompareTag("BaseBlue"))
-        {
-            Destroy(gameObject);
-        }
+    //    if(spawn && other.CompareTag("BaseBlue"))
+      //  {
+        //    Destroy(gameObject);
+        //}
     }
 }
