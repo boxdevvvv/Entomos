@@ -49,6 +49,7 @@ public class traslador : MonoBehaviour
             direction = true;
             win = true;
             speed = 1;
+            GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
         }
     //    if(spawn && other.CompareTag("BaseBlue"))
       //  {
