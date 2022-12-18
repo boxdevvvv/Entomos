@@ -35,17 +35,11 @@ public class SoundManager : MonoBehaviour
 
         effectsScript = GameObject.FindGameObjectWithTag("Sound").GetComponent<AudioSource>();
 
-        sonidos[0] = Resources.Load<AudioClip>("PopSound");
-        sonidos[1] = Resources.Load<AudioClip>("PopSound2");
-        sonidos[2] = Resources.Load<AudioClip>("Pared");
 
-        sonidos[3] = Resources.Load<AudioClip>("Emerge");
-
-        sonidos[4] = Resources.Load<AudioClip>("Colision");
-        sonidos[5] = Resources.Load<AudioClip>("muerte");
-        sonidos[6] = Resources.Load<AudioClip>("airtone");
-
-        sonidos[7] = Resources.Load<AudioClip>("muerte");
+        sonidos[0] = Resources.Load<AudioClip>("Ataques");
+        sonidos[1] = Resources.Load<AudioClip>("Spawn");
+        sonidos[2] = Resources.Load<AudioClip>("Minando");
+        sonidos[3] = Resources.Load<AudioClip>("Muerte");
 
         print("iNICIO START DE MUSICA");
     }
@@ -59,18 +53,11 @@ public class SoundManager : MonoBehaviour
             case "spawn":
                 effectsScript.PlayOneShot(sonidos[1]);
                 break;
-
-            case "otro nombre":
+            case "minando":
                 effectsScript.PlayOneShot(sonidos[2]);
                 break;
-            case "otro nombre1":
-                effectsScript.PlayOneShot(sonidos[3]);
-                break;
-            case "otro nombre2":
-                effectsScript.PlayOneShot(sonidos[4]);
-                break;
             case "muerte":
-                effectsScript.PlayOneShot(sonidos[5]);
+                effectsScript.PlayOneShot(sonidos[2]);
                 break;
 
         }
