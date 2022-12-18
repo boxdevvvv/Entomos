@@ -8,7 +8,8 @@ public class atacante : MonoBehaviour
       {
             Destroy(other.gameObject);
             GetComponentInChildren<Animator>().SetTrigger("Atack");
-      }
+            SoundManager.PlaySound("muerte");
+        }
 
       if(other.CompareTag("MinaBlueTop"))
       {
