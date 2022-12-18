@@ -12,12 +12,12 @@ public class traslador : MonoBehaviour
         {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-        }
-        if (direction)
-        {
+       }
+       if (direction)
+       {
             transform.Translate(Vector3.back * Time.deltaTime * speed);
 
-        }
+       }
     }
     public bool win;
     public Transform sphere;
@@ -25,19 +25,30 @@ public class traslador : MonoBehaviour
     {
         sphere.parent = null;
     }
+    private void Start()
+    {
+        speedSecret = speed;
+    }
+    private float speedSecret;
     private void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("sphere"))
         {
            direction = false;
             print("salio blue");
-            speed = 5;
+            win = false;
+            
         }
         if(other.CompareTag("BaseBlue"))
         {
-            spawn = true;
+
         }
         
+    }
+
+    public void StartRun()
+    {
+
     }
     public bool spawn;
     private void OnTriggerEnter(Collider other)
