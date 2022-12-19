@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edac866d9ba577340ae89ae5570ffa9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   direction: 0
   win: 0
+  speed: 5
   sphere: {fileID: 0}
   spawn: 0
 --- !u!54 &-2540310788199639549
@@ -164,27 +164,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5255073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.5255073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5255073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.060852
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.24
+      value: -2.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80f42ef1dda0084fbb71105e9b43061, type: 3}
       propertyPath: m_LocalRotation.w
