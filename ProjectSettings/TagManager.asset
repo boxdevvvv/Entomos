@@ -19,6 +19,8 @@ TagManager:
   - MinasRedTop
   - MinasRedBot
   - BaseRed
+  - FxTemporaire
+  - Sound
   layers:
   - Default
   - TransparentFX
