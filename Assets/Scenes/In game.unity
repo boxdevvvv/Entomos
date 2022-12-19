@@ -1355,7 +1355,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.16, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &137267981
 MeshRenderer:
@@ -5578,7 +5578,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.16, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &505561698
 MeshRenderer:
@@ -10130,7 +10130,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.16, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &852786845
 MeshRenderer:
@@ -10598,10 +10598,10 @@ MonoBehaviour:
   - {x: 0, y: -220, z: 0}
   eleccionRuta: 2
   txteter: {fileID: 669267251}
-  eter: 0
+  eter: 1901
   unidades:
-  - {fileID: 8065551805019304593, guid: 3138558fd4f4840419e01e4bd3331535, type: 3}
-  - {fileID: 8065551805019304593, guid: 42bc49591fe19f64ba7eb36bc5531374, type: 3}
+  - {fileID: 1597129930672170666, guid: 4acca5633e72ef64da85348aac52e8a5, type: 3}
+  - {fileID: 7807447783108502652, guid: a4cdab3447c85ae45a0afdd8c3534f0d, type: 3}
   - {fileID: 8065551805019304593, guid: 1c761c7089dc050458d52369beb8f5a9, type: 3}
   rutasObject:
   - {fileID: 608306879}
@@ -10948,7 +10948,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &924611694
 MeshRenderer:
@@ -16375,7 +16375,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.16, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1331058373
 MeshRenderer:
@@ -17575,7 +17575,7 @@ MonoBehaviour:
   - {x: 0, y: -45, z: 0}
   eleccionRuta: 2
   txteter: {fileID: 722558386}
-  eter: 0
+  eter: 1422
   unidades:
   - {fileID: 8065551805019304593, guid: d8fd379baf837b4488a291b28d5b500c, type: 3}
   - {fileID: 8065551805019304593, guid: 556061486eeb38c499d7aae826ce7f33, type: 3}

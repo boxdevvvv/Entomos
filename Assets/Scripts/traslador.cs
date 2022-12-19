@@ -4,22 +4,23 @@ using UnityEngine;
 using DG.Tweening;
 public class traslador : MonoBehaviour
 {
-    public float speed;
-    public bool direction;
-    private void Update()
+    void Update()
     {
-       if(!direction)
+        if (!direction)
         {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+            transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-       }
-       if (direction)
-       {
+        }
+        if (direction)
+        {
             transform.Translate(Vector3.back * Time.deltaTime * speed);
 
-       }
+        }
     }
+
+    public bool direction;
     public bool win;
+    public float speed;
     public Transform sphere;
     private void OnDestroy()
     {
@@ -32,39 +33,58 @@ public class traslador : MonoBehaviour
     private float speedSecret;
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("sphere"))
+        if (other.CompareTag("sphere"))
         {
-           direction = false;
-            print("salio blue");
+            speed = 0;
+
+            direction = false;
             win = false;
-            
+            Invoke("StartRun", 3);
+            print("se activo idle");
         }
-        if(other.CompareTag("BaseBlue"))
+        if (other.CompareTag("BaseRed"))
         {
 
         }
-        
+
     }
 
     public void StartRun()
     {
+        speed = speedSecret;
+        spawn = false;
 
     }
+    public void Idle()
+    {
+        direction = true;
+        win = true;
+        speed = 1;
+        print("se pego la esfera y retrocede traslador red");
+        GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
+        sphere.transform.parent = null;
+        sphere.transform.SetParent(transform);
+    }
     public bool spawn;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("sphere"))
+        if (other.CompareTag("sphere"))
         {
-           other.transform.SetParent(transform);
-            sphere = other.transform;
-            direction = true;
-            win = true;
-            speed = 1;
-            GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
+            if (!spawn)
+            {
+                spawn = true;
+                sphere = other.transform;
+                Invoke("Idle", 0.5f);
+            }     
         }
-    //    if(spawn && other.CompareTag("BaseBlue"))
-      //  {
-        //    Destroy(gameObject);
-        //}
+        if (win && other.CompareTag("BaseBlue"))
+        {
+            //win
+        }
+
+
+
+
     }
 }
