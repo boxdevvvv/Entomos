@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Introduction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] paneles;
 
-    // Update is called once per frame
-    void Update()
+
+
+
+
+    private void Update()
     {
         
     }

@@ -13,6 +13,7 @@ public class mineroRed : MonoBehaviour
     public bool directionTop;
     public bool directionBot;
     public bool recolecto;
+    public GameObject piedra;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("MinasRedTop"))
@@ -22,12 +23,15 @@ public class mineroRed : MonoBehaviour
             directionTop = true;
             recolecto = true;
             GetComponentInChildren<Animator>().SetBool("LlevaMineral", true);
+            piedra.SetActive(true);
+
         }
         if (other.CompareTag("BaseRed") && directionTop)
         {
             //direction = false;
             transform.rotation = Quaternion.Euler(0, -220, 0);
             GetComponentInChildren<Animator>().SetBool("LlevaMineral", false);
+            piedra.SetActive(false);
 
 
         }
@@ -35,6 +39,7 @@ public class mineroRed : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 45, 0);
             GetComponentInChildren<Animator>().SetBool("LlevaMineral", false);
+            piedra.SetActive(false);
 
         }
         if (other.CompareTag("MinasRedBot"))
@@ -43,6 +48,7 @@ public class mineroRed : MonoBehaviour
             directionBot = true;
             recolecto = true;
             GetComponentInChildren<Animator>().SetBool("LlevaMineral", true);
+            piedra.SetActive(true);
 
            
         }
