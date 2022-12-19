@@ -53,7 +53,8 @@ public class TrasladorRed : MonoBehaviour
     {
         speed = speedSecret;
         spawn = false;
-       
+
+        GetComponentInChildren<Animator>().SetBool("TomaOrbe", false);
 
     }
     public void Idle()
@@ -62,9 +63,10 @@ public class TrasladorRed : MonoBehaviour
         win = true;
         speed = 1;
         print("se pego la esfera y retrocede traslador red");
-        GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
         sphere.transform.parent = null;
         sphere.transform.SetParent(transform);
+        GetComponentInChildren<Animator>().SetBool("TomaOrbe", true);
+
     }
     public bool spawn;
 
