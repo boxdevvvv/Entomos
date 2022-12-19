@@ -9,7 +9,7 @@ public class AtacanteRed : MonoBehaviour
         if (other.CompareTag("Blue"))
         {
             Destroy(other.gameObject);
-            GetComponentInChildren<Animator>().SetTrigger("Atack");
+            GetComponentInChildren<Animator>().SetTrigger("atack");
         }
 
         if (other.CompareTag("MinasRedTop"))

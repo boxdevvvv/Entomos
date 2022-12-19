@@ -14,6 +14,10 @@ public class ControladorRed : MonoBehaviour
     public int eter;
     public GameObject[] unidades;
     public GameObject[] rutasObject;
+
+
+    public AudioClip invocar;
+    public AudioSource sound;
     void Update()
     {
         txteter.text = eter.ToString();
@@ -66,6 +70,7 @@ public class ControladorRed : MonoBehaviour
             {
                 eleccionRuta = 0;
                 Mineros();
+                sound.PlayOneShot(invocar);
                 eter -= 1;
             }
             if (indexRoute == 2 && eter >= 1)
@@ -73,6 +78,7 @@ public class ControladorRed : MonoBehaviour
                 eleccionRuta = 2;
                 Mineros();
                 eter -= 1;
+                sound.PlayOneShot(invocar);
 
             }
         }
@@ -83,6 +89,7 @@ public class ControladorRed : MonoBehaviour
                 eleccionRuta = 0;
                 Atacantes();
                 eter -= 3;
+                sound.PlayOneShot(invocar);
 
             }
             if (indexRoute == 1 && eter >= 3)
@@ -90,6 +97,7 @@ public class ControladorRed : MonoBehaviour
                 eleccionRuta = 1;
                 Atacantes();
                 eter -= 3;
+                sound.PlayOneShot(invocar);
 
             }
             if (indexRoute == 2 && eter >= 3)
@@ -97,6 +105,7 @@ public class ControladorRed : MonoBehaviour
                 eleccionRuta = 2;
                 Atacantes();
                 eter -= 3;
+                sound.PlayOneShot(invocar);
 
             }
 
@@ -108,6 +117,7 @@ public class ControladorRed : MonoBehaviour
                 eleccionRuta = 1;
                 Trasladores();
                 eter -= 5;
+                sound.PlayOneShot(invocar);
 
             }
 
@@ -142,7 +152,10 @@ public class ControladorRed : MonoBehaviour
     {
         while (true)
         {
-            eter++;
+            if (eter == 0)
+            {
+                eter++;
+            }
             yield return new WaitForSeconds(3);
         }
     }
