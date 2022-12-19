@@ -1,38 +1,8 @@
 fileFormatVersion: 2
-guid: 604e2dab1e5c7204b87165d00babd753
+guid: f30ebe814a5a3ab4e9bc852c96fc5dbe
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 6247042167683382733
-    second: Armature Soldado|AtacanteHumanoAtack
-  - first:
-      74: -3929614838744615835
-    second: Armature Soldado|AtacanteHumanoWalk
-  - first:
-      74: -8744795552457280863
-    second: Armature Soldado|Idle
-  - first:
-      74: 9027807114501054466
-    second: Armature Soldado|RootAction
-  - first:
-      74: -8400506365896338787
-    second: Armature Soldado|Root|Root|Idle
-  - first:
-      74: 8178842998682631801
-    second: Armature Soldado|Root|Root|Idle.001
-  - first:
-      74: 8470514857748322008
-    second: Armature Soldado|Root|Root|Run_loop
-  - first:
-      74: 8514155789915410510
-    second: Armature Soldado|Root|Root|Run_loop.001
-  - first:
-      74: -1943272983053792459
-    second: Armature Soldado|Root|Root|Walk_loop
-  - first:
-      74: -6670919623376895756
-    second: Armature Soldado|Root|Root|Walk_loop.001
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
