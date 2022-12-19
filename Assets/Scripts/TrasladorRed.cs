@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class TrasladorRed : MonoBehaviour
 {
-    public float speed;
-    public bool direction;
-    private void Update()
+    void Update()
     {
         if (!direction)
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
         }
         if (direction)
         {
             transform.Translate(Vector3.back * Time.deltaTime * speed);
+
         }
     }
+
+    public bool direction;
     public bool win;
+    public float speed;
     public Transform sphere;
     private void OnDestroy()
     {
@@ -37,7 +40,7 @@ public class TrasladorRed : MonoBehaviour
             direction = false;
             win = false;
             Invoke("StartRun", 3);
-            print("se activo idle");
+            print("se activo  quedarse quieto para correr de blue");
         }
         if (other.CompareTag("BaseRed"))
         {
@@ -50,6 +53,7 @@ public class TrasladorRed : MonoBehaviour
     {
         speed = speedSecret;
         spawn = false;
+       
 
     }
     public void Idle()
@@ -75,6 +79,102 @@ public class TrasladorRed : MonoBehaviour
                 Invoke("Idle", 0.5f);
             }
 
+           
         }
+        if (win && other.CompareTag("BaseBlue"))
+        {
+            //win
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }

@@ -22,8 +22,6 @@ public class minero : MonoBehaviour
             directionTop = true;
             recolecto = true;
             GetComponentInChildren<Animator>().SetBool("Cargando", true);
-            SoundManager.PlaySound("minando");
-
         }
         if (other.CompareTag("BaseBlue") && directionTop)
         {

@@ -23,7 +23,6 @@ public class SoundManager : MonoBehaviour
     }
 
     public static AudioClip[] sonidos;
-    public static AudioClip sadas;
     public static AudioSource effectsScript;
     public static AudioSource musicScript;
 
@@ -34,10 +33,10 @@ public class SoundManager : MonoBehaviour
     {
         musicScript = GetComponent<AudioSource>();
 
-       // effectsScript = GameObject.FindGameObjectWithTag("Sound").GetComponent<AudioSource>();
+        effectsScript = GameObject.FindGameObjectWithTag("Sound").GetComponent<AudioSource>();
 
 
-      sadas = Resources.Load<AudioClip>("Ataques");
+        sonidos[0] = Resources.Load<AudioClip>("Ataques");
         sonidos[1] = Resources.Load<AudioClip>("Spawn");
         sonidos[2] = Resources.Load<AudioClip>("Minando");
         sonidos[3] = Resources.Load<AudioClip>("Muerte");

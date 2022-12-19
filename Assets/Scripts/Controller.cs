@@ -107,7 +107,10 @@ public class Controller : MonoBehaviour
                 eleccionRuta = 1;
                 Trasladores();
                 eter -= 5;
+
             }
+
+
         }
         #endregion
     }
@@ -159,11 +162,8 @@ public class Controller : MonoBehaviour
     {
         while (true)
         {
-            if(eter == 0)
-            {
-                eter++;
-               yield return new WaitForSeconds(3);
-            }
+            eter++;
+            yield return new WaitForSeconds(3);
         }
     }
 
