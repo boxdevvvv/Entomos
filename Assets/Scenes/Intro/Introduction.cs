@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Introduction : MonoBehaviour
 {
     public GameObject[] paneles;
@@ -10,8 +10,30 @@ public class Introduction : MonoBehaviour
 
 
 
-    private void Update()
+    private void Start()
     {
-        
+        StartCoroutine(Starto());
+    }
+
+
+    private int pagina;
+    IEnumerator Starto()
+    {
+       while(true)
+        {
+
+            paneles[pagina].SetActive(true);
+            pagina++;
+
+
+            yield return new WaitForSeconds(4);
+
+            if(pagina == 5)
+            {
+                SceneManager.LoadScene(2);
+            }
+
+        }
+            yield break;
     }
 }
