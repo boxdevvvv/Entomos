@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     public void restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
     }
 
