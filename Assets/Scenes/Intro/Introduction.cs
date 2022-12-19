@@ -26,7 +26,7 @@ public class Introduction : MonoBehaviour
             pagina++;
 
 
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
 
             if(pagina == 5)
             {
