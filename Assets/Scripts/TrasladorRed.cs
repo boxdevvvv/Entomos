@@ -24,6 +24,8 @@ public class TrasladorRed : MonoBehaviour
     public Transform sphere;
     private void OnDestroy()
     {
+        GameObject.FindGameObjectWithTag("BaseRed").GetComponent<ControladorRed>().spawneo = false;
+
         sphere.parent = null;
     }
     private void Start()

@@ -14,7 +14,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public static GameManager _gameManager;
+    private void Awake()
+    {
+        _gameManager = this;
+    }
     public void restart()
     {
         SceneManager.LoadScene(2);
@@ -23,6 +27,14 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI onePlayerEter;
     public TextMeshProUGUI twoPlayerEter;
+
+
+    public Controller player1;
+    public ControladorRed player2;
+
+
+    public bool spawneoPlayer1;
+    public bool spawneoPlayer2;
   //  public int
     // Update is called once per frame
     // void Update()

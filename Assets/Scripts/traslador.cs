@@ -24,7 +24,9 @@ public class traslador : MonoBehaviour
     public Transform sphere;
     private void OnDestroy()
     {
+        GameObject.FindGameObjectWithTag("BaseBlue").GetComponent<Controller>().spawneoTraslador = false;
         sphere.parent = null;
+        print("destruyo blue carguero");
     }
     private void Start()
     {

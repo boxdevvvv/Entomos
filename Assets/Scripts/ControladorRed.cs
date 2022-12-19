@@ -114,10 +114,14 @@ public class ControladorRed : MonoBehaviour
         {
             if (indexRoute == 1 && eter >= 5)
             {
+                if(!spawneo)
+                {
+                    spawneo = true;
                 eleccionRuta = 1;
                 Trasladores();
                 eter -= 5;
                 sound.PlayOneShot(invocar);
+                }
 
             }
 
@@ -125,6 +129,7 @@ public class ControladorRed : MonoBehaviour
         }
         #endregion
     }
+    public bool spawneo;
     public void Mineros()
     {
         Instantiate(unidades[0], transform.position, Quaternion.Euler(rutas[eleccionRuta]));

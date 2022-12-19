@@ -8202,6 +8202,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onePlayerEter: {fileID: 722558386}
   twoPlayerEter: {fileID: 669267251}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  spawneoPlayer1: 0
+  spawneoPlayer2: 0
 --- !u!4 &705599083
 Transform:
   m_ObjectHideFlags: 0
@@ -10869,6 +10873,7 @@ MonoBehaviour:
   - {fileID: 1420161072}
   invocar: {fileID: 8300000, guid: 6765ab6bcbe521143a38ff90081bb40e, type: 3}
   sound: {fileID: 887398544}
+  spawneo: 0
   wintext: {fileID: 198849276}
   win: {fileID: 353786119}
 --- !u!65 &887398540
@@ -18129,6 +18134,7 @@ MonoBehaviour:
   - {fileID: 1616546849}
   invocar: {fileID: 8300000, guid: 6765ab6bcbe521143a38ff90081bb40e, type: 3}
   sound: {fileID: 1477982700}
+  spawneoTraslador: 0
   wintext: {fileID: 198849276}
   win: {fileID: 353786119}
 --- !u!82 &1477982700
