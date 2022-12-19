@@ -11,12 +11,10 @@ public class traslador : MonoBehaviour
        if(!direction)
         {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
        }
        if (direction)
        {
             transform.Translate(Vector3.back * Time.deltaTime * speed);
-
        }
     }
     public bool win;
@@ -34,10 +32,12 @@ public class traslador : MonoBehaviour
     {
         if(other.CompareTag("sphere"))
         {
-           direction = false;
-            print("salio blue");
+            speed = 0;
+
+            direction = false;
             win = false;
-            
+            Invoke("StartRun", 3);
+            print("se activo idle");  
         }
         if(other.CompareTag("BaseBlue"))
         {
@@ -48,23 +48,33 @@ public class traslador : MonoBehaviour
 
     public void StartRun()
     {
+        speed = speedSecret;
+        spawn = false;
 
     }
+    public void Idle()
+    {
+        direction = true;
+        win = true;
+        speed = 1;
+        print("se pego la esfera y retrocede traslador blue");
+        GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
+        sphere.transform.parent = null;
+        sphere.transform.SetParent(transform);
+    }
     public bool spawn;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("sphere"))
         {
-           other.transform.SetParent(transform);
-            sphere = other.transform;
-            direction = true;
-            win = true;
-            speed = 1;
-            GetComponentInChildren<Animator>().SetBool("CargandoOrbe", true);
+            if(!spawn)
+            {
+                spawn = true;
+                sphere = other.transform;
+                Invoke("Idle", 0.5f);
+            }
+            
         }
-    //    if(spawn && other.CompareTag("BaseBlue"))
-      //  {
-        //    Destroy(gameObject);
-        //}
     }
 }
