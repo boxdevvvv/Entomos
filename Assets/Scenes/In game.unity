@@ -5834,7 +5834,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 534057957}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 705599082}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &534057957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10607,6 +10619,8 @@ MonoBehaviour:
   - {fileID: 608306879}
   - {fileID: 2100144042}
   - {fileID: 1420161072}
+  wintext: {fileID: 198849276}
+  win: {fileID: 353786119}
 --- !u!65 &887398540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17681,6 +17695,8 @@ MonoBehaviour:
   - {fileID: 1174445740}
   - {fileID: 1039167690}
   - {fileID: 1616546849}
+  wintext: {fileID: 198849276}
+  win: {fileID: 353786119}
 --- !u!1001 &1480845034
 PrefabInstance:
   m_ObjectHideFlags: 0

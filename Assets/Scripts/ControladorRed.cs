@@ -165,10 +165,12 @@ public class ControladorRed : MonoBehaviour
         }
         if (other.CompareTag("sphere"))
         {
-            SceneManager.LoadScene(2);
+            wintext.text = "Los Humanos ganan la batalla";
+            win.SetActive(true);
         }
     }
-
+    public TextMeshProUGUI wintext;
+    public GameObject win;
     private void Start()
     {
         StartCoroutine(Eter());

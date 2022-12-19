@@ -61,7 +61,6 @@ public class AtacanteRed : MonoBehaviour
     public float speed;
     private void Update()
     {
-
         transform.Translate(Vector3.back * Time.deltaTime * speed);
     }
 
