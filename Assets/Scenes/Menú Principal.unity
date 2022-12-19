@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "2 Pad Numerico" para cambiar crear al humano atacante.
+  m_text: Presione el "2 Pad Numerico" para crear al humano atacante.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
@@ -1885,7 +1885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "1" para cambiar crear al entommo minero.
+  m_text: Presione el "1" para crear al entommo minero.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
@@ -2430,7 +2430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "3" para cambiar crear al entommo carguero.
+  m_text: Presione el "3" para crear al entommo carguero.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "2" para cambiar crear al entommo atacante.
+  m_text: Presione el "2" para crear al entommo atacante.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
@@ -3898,7 +3898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "3 Pad Numerico" para cambiar crear al humano carguero.
+  m_text: Presione el "3 Pad Numerico" para crear al humano carguero.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
@@ -4062,7 +4062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presione el "1 Pad Numerico" para cambiar crear al humano minero.
+  m_text: Presione el "1 Pad Numerico" para crear al humano minero.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
   m_sharedMaterial: {fileID: 2072342694403522755, guid: b6f86f8d355efd54a9b2d3ef8d9f2a22, type: 2}
