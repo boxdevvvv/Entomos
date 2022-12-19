@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: "Assets/Scenes/Intro Cinem\xE1tica.unity"
     guid: 1195bf0549dda4147a6b092fe63d01a1
   - enabled: 1
-    path: "Assets/Scenes/Men\xFA Principal.unity"
-    guid: 66c7ae37a1e7ecb4daa2d9b5ca697914
-  - enabled: 1
     path: Assets/Scenes/In game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Ganan Entommos.unity
-    guid: fdaec325dc200f144b2a1b3f23d162dc
-  - enabled: 1
-    path: Assets/Scenes/Ganan Humanos.unity
-    guid: 20a3980595094674f9f4cee1e879fd82
+    path: "Assets/Scenes/Men\xFA Principal.unity"
+    guid: 66c7ae37a1e7ecb4daa2d9b5ca697914
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

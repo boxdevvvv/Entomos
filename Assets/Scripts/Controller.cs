@@ -151,11 +151,12 @@ public class Controller : MonoBehaviour
         if(other.CompareTag("sphere"))
         {
             print("asda");
-            SceneManager.LoadScene(1);
+            wintext.text = "Los Entomos ganan la batalla";
+            win.SetActive(true);
         }
-       
     }
-    
+    public TextMeshProUGUI wintext;
+    public GameObject win;
     
 
     IEnumerator Eter()

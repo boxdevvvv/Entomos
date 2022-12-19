@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    public void restart()
+    {
+        SceneManager.LoadScene(0);
+
+    }
+
     public TextMeshProUGUI onePlayerEter;
     public TextMeshProUGUI twoPlayerEter;
   //  public int
