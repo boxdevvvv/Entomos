@@ -41,10 +41,12 @@ public class minero : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, -225, 0);
             GetComponentInChildren<Animator>().SetBool("Cargando", true);
-            SoundManager.PlaySound("minando");
-
             directionBot = true;
             recolecto = true;
+
+            SoundManager.PlaySound("minando");
+
+           
         }
     }
 }

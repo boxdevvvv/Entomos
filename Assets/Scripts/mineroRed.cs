@@ -40,10 +40,11 @@ public class mineroRed : MonoBehaviour
         if (other.CompareTag("MinasRedBot"))
         {
             transform.rotation = Quaternion.Euler(0, 225, 0);
-            GetComponentInChildren<Animator>().SetBool("LlevaMineral", true);
-
             directionBot = true;
             recolecto = true;
+            GetComponentInChildren<Animator>().SetBool("LlevaMineral", true);
+
+           
         }
     }
 }
